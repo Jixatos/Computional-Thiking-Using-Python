@@ -6,33 +6,40 @@
 - média menor do que 6 - conceito E
 Utilize as estruturas condicionais (if-elif-else e mach-case) para enconar a média e imprimir o conceito.
 '''
-nota1 = int(input('1ª nota: '))
-nota2 = int(input('2ª nota: '))
-nota3 = int(input('3ª nota: '))
+
+nota1 = float(input('1ª nota: '))
+nota2 = float(input('2ª nota: '))
+nota3 = float(input('3ª nota: '))
 media = (nota1+nota2+nota3)/3
 
+'''Criar a variavel conceito não e necessário no python, porém, no java e demais necessita a criação da variavel previamente.'''
 conceito = ''
 
 if media < 6:
     conceito = 'E'
-elif media >= 6 and media <= 6.9:
+elif media >= 6 and media < 7:
     conceito = 'D'
-elif media >= 7 and media <= 7.9:
+elif media >= 7 and media < 8:
     conceito = 'C'
-elif media >= 8 and media <= 8.9:
+elif media >= 8 and media < 9:
     conceito = 'B'
 else:
     conceito = 'A'
 
 match conceito:
     case 'A':
-        print('Conceito A')
+        print('Conceito ', conceito)
+        print('Sua média é de ', round(media, 2))
     case 'B':
-        print('Conceito B')
+        print('Conceito ', conceito)
+        print('Sua média é de ', round(media, 2))
     case 'C':
-        print('Conceito C')
+        print('Conceito ', conceito)
+        print('Sua média é de ', round(media, 2))
     case 'D':
-        print('Conceito D')
+        print('Conceito ', conceito)
+        print('Sua média é de ', round(media, 2))
     case 'E':
-        print('Conceito E')
+        print('Conceito ', conceito)
+        print('Sua média é de ', round(media, 2))
         
