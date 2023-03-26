@@ -43,5 +43,5 @@ else:
 if r != 'nd':
     print('Resultado: ', r)
 else:
-    prin('Opção é invlálida')
+    print('Opção é invlálida')
     
