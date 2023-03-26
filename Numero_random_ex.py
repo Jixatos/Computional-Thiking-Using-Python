@@ -2,10 +2,12 @@
 seja, o programa deve somar 150 a esse número. Ao final, o
 programa deve imprimir o resultado"""
 
-numero = int(input("Qual o número de sua escolha"))
-
+numero = int(input("Qual o número de sua escolha: "))
+resultado = ''
 if numero > 100:
-    numero + 150
+    resultado = numero + 150
+else:
+    resultado
 
-print(numero)
+print(resultado)
 
