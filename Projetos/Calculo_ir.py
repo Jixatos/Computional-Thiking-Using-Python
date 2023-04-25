@@ -9,3 +9,8 @@ Renda acima de R$ 4.664,68: alíquota máxima de 27,5%.
 
 https://www.creditas.com/exponencial/tabela-imposto-de-renda/
 '''
+
+salario = float(input('Digite seu salário mensal:'))
+salarioL = ''
+aliquota = ''
+imposto = ''
