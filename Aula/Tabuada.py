@@ -1,11 +1,10 @@
 '''
 Tabuada usando while
 '''
-nun = int(input('Qual o número escolhido para a tabuada?'))
-mult = 1
+tab = int(input('Qual o número escolhido para a tabuada?'))
 
-while mult <= 10:
-    print(f'{nun} * {mult} = {nun*mult}')
-    mult += 1
-
+for nun in range (0,11,1):
+    print((str(tab) + " x " + str(nun) + " = " + str(tab*nun)))
+    
+    
 print('Fim!')
