@@ -44,7 +44,7 @@ def imprimir_impares():
     print("*- Números impares-*")
     print("----------------------")
     for i in lista:
-        if i%2 == 1:
+        if i%2!=0:
             print(f"Elemento: {i}")
 
 def separar_par():
