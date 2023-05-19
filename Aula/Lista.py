@@ -5,7 +5,7 @@
 2) Função para criar a lista - criar_lista()
 3) Função para imprimir a lista - imprimir_lista()
 4) Função para imprimir os elementos pares da lista
-5) Função para separar os elementos impares da lista
+5) Função para separar os elementos pares da lista
 7) Função para separar os elementos impares da lista
 8) Função que verifica a ocorrencia de um determinado número
 9) Função que obtem um número
@@ -18,7 +18,7 @@ def tamanho_lista():
 
 def criar_lista(t):
     print("*- Criar uma lista -*")
-    print("----------------------")
+    print("---------------------")
     lista = [] #lista vazia
     i = 0
     while i<t:
@@ -28,50 +28,73 @@ def criar_lista(t):
     return lista
 
 def imprimir(lista):
-    print("*- Emprimir uma lista -*")
-    print("----------------------")
+    print("*- Emprimir lista -*")
+    print("--------------------")
     for i in lista:
         print(f"Elemento: {i}")
 
 def imprimir_par():
-    print("*- Números Pares-*")
+    print("*- Imprimir Pares-*")
     print("----------------------")
     for i in lista:
         if i%2 == 0:
             print(f"Elemento: {i}")
             
 def imprimir_impares():
-    print("*- Números impares-*")
+    print("*- Imprimir impares-*")
     print("----------------------")
     for i in lista:
-        if i%2!=0:
+        if i%2 != 0:
             print(f"Elemento: {i}")
 
+lista_par = []
 def separar_par():
-    print("*- Separar Pares -*")
-    print("----------------------")
+    print("*- Separando elementos Pares -*")
+    print("-------------------------------")
     for i in lista:
         if i%2==0:
-            lista_par = []
             lista_par.append(i)
-            print(f"Números pares: {i}")
-            
+    return lista_impar
+
+lista_impar = []
 def separar_impar():
-    print("*- Separar Impares -*")
-    print("----------------------")
+    print("*- Separando elementos Impares -*")
+    print("---------------------------------")
     for i in lista:
-        if i%2!=0:
-            lista_par = []
-            lista_par.append(i)
-            print(f"Números impares: {i}")
+        if i%2 != 0 :
+            lista_impar.append(i)
+    return lista_par
+
+def obter_numero():
+    print("*- Obtendo Número -*")
+    print("-------------------")
+    n = int(input("Número:"))
+    return n
+
+def verificar_ocorrencia(n,lista):
+    print("*- Verificando Ocorrencia de um número na lista -*")
+    print("--------------------------------------------------")
+    #flag booleana
+    achou = False #estado inicial
+    for i in lista:
+        achou = True
+        return achou
+    return achou
+
+    
+
             
 
 
 #Programa Principal
 t = tamanho_lista()
 lista = criar_lista(t)
-imprimir(lista)
+# imprimir(lista)
 # imprimir_par()
 # imprimir_impares()
 separar_par()
+imprimir(lista_par)
 separar_impar()
+imprimir(lista_impar)
+n = obter_numero
+verificar_ocorrencia(n, lista)
